@@ -15,7 +15,7 @@ fun main() {
             "*" -> println("${num1} 곱하기 ${num2} 결과는 ${Calculator(MultiplyOperation()).operate(num1, num2)}입니다.")
             "/" -> println("${num1} 나누기 ${num2} 결과는 ${Calculator(DivideOperation()).operate(num1, num2)}입니다.")
             "%" -> println("${num1} 나누기 ${num2}의 나머지는 ${Calculator(RemainderOperation()).operate(num1, num2)}입니다.")
-            else -> "지원하지 않는 연산입니다."
+            else -> println("지원하지 않는 연산입니다.")
         }
 
         println("계속하려면 y를 입력하세요.")
