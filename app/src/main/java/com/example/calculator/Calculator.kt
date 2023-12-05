@@ -7,6 +7,7 @@ class Calculator {
             "-" -> "${num1} 빼기 ${num2} 결과는 ${substract(num1, num2)}입니다."
             "*" -> "${num1} 곱하기 ${num2} 결과는 ${multiply(num1, num2)}입니다."
             "/" -> "${num1} 나누기 ${num2} 결과는 ${divide(num1, num2)}입니다."
+            "%" -> "${num1} 나누기 ${num2}의 나머지는 ${remainder(num1, num2)}입니다"
             else -> "지원하지 않는 연산입니다."
         }
     }
@@ -15,4 +16,5 @@ class Calculator {
     fun substract(num1: Int, num2: Int): Double = (num1 - num2).toDouble()
     fun multiply(num1: Int, num2: Int): Double = (num1 * num2).toDouble()
     fun divide(num1: Int, num2: Int): Double = num1 / num2.toDouble()
+    fun remainder(num1: Int, num2: Int): Double = (num1 % num2).toDouble()
 }
